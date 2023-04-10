@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Assignment 10">
+  <meta property="og:description" content="My Homework 10 visualizations">
+  <meta property="og:image" content="assets/pngs/visualization.png">
+
+  <title>Assignment 10</title>
+  <meta name="description" content="My Homework 10 visualizations">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Shashank Kambhatla</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="shashank-kambhatla">Shashank Kambhatla</h1>
+<h1 id="is-445-assignment-10">IS 445 Assignment 10</h1>
+
+<p>Code sources:</p>
+<ul>
+  <li>https://uiuc-ischool-dataviz.github.io/is445_oauoag_spring2023/nbv.html?notebook_name=%2Fis445_oauoag_spring2023%2Fweek12%2FinClass_week12.ipynb</li>
+  <li>https://vega.github.io/vega-lite/docs/bind.html</li>
+  <li>https://vega.github.io/vega-lite-v3/docs/filter.html</li>
+  <li>https://vega.github.io/vega-lite-v4/docs/init.html</li>
+  <li>https://starboard.gg/nb/nFpfz3I</li>
+</ul>
+
+<h1 id="viz-1">Viz 1</h1>
+
+<vegachart schema-url="/assets/json/mychart1.json" style="width: 100%"></vegachart>
+
+<p>Code sources:</p>
+<ul>
+  <li>https://uiuc-ischool-dataviz.github.io/is445_oauoag_spring2023/nbv.html?notebook_name=%2Fis445_oauoag_spring2023%2Fweek12%2FinClass_week12.ipynb</li>
+  <li>https://vega.github.io/vega-lite/docs/bind.html</li>
+  <li>https://vega.github.io/vega-lite-v4/docs/init.html</li>
+  <li>https://starboard.gg/nb/nFpfz3I</li>
+</ul>
+
+<p>For this assignment, I chose to stick with the same dataset that I used for assignment 9, as I felt there was plenty of scope for more interesting graphs. Furthermore, I wanted to work on creating an interactive graph for this dataset. I decided to make an interactive version of a graph of floors above grade over time. The graph depicts the mean floors above grade for each year in which a building was constructed. I made an interactive graph by providing the ability for the user to filter the chart to the Congressional district of their choosing. I felt that this interactivity makes for an interesting way to observe how different counties took up taller buildings over time, and how many they were building.</p>
+
+<p>I had done a graph of floors above grade over years constructed as a line graph for my previous assignment, so I referenced this as a starting point. This was plot 1 from assigmment 9. I removed the quotation marks around the numbers to make the previous vega lite plot on Starboard work with Altair. I also made other changes to the code. I chose to implement a bar chart, rather than a line graph that I had previously executed, as I noticed that upon filtering, data values for some years were not present for some congressional district. This affected the line graph because it introduced inacurate lines in some places where there was no data. The bar graph showcased a much better representation of which years had no data, and which years did.</p>
+
+<p>The transformation I added to this graph was to filter the data to the “selection s”. Selection s is the parameter I created that takes an input Congressional district from the user in a dropdown menu. The transform command sees this and filters to the desired Congressional district. For the encoding, I made sure to specify that the year constructed was temporal data. I also specified the timeunit as years, so we get yearly intervals. I also implemented mean aggration for the floors above grade to get the average number for each year a building was constructed. I also I chose not to add any additional coloring or colorscheme as I deemed the standard vega lite bar graph colors sufficient in conveying the meaning of the graph. The bars themselves differentiate years from one another, so further coloring was not necessary.</p>
+
+<h1 id="viz-2">Viz 2</h1>
+
+<vegachart schema-url="/assets/json/mychart2.json" style="width: 100%"></vegachart>
+
+<p>Code sources:</p>
+<ul>
+  <li>https://uiuc-ischool-dataviz.github.io/is445_oauoag_spring2023/nbv.html?notebook_name=%2Fis445_oauoag_spring2023%2Fweek12%2FinClass_week12.ipynb</li>
+  <li>https://vega.github.io/vega-lite-v3/docs/filter.html</li>
+  <li>https://starboard.gg/nb/nFpfz3I</li>
+</ul>
+
+<p>Once again, this visualization uses the same dataset as that used in Homework 9. This visualization is based upon the seccond plot form Assignment 9, but uses a different field on the y axis, a different and a different transformation. This graph is a bar graph that depicts the number of buildings with 5 floors or more in all counties with at least one building in this range. I chose to make this graph because I wanted to explore the transformation features that Vega lite has.</p>
+
+<p>I performed a filter transformation on the dataset. Specifically, I filtered the Total Floors field to all values equal to and above 5 using the “gte” parameter. I then counted these values using the aggregate count function in the encoding for the Total Floors axis. I set the encoding of the counties field to “nominal” given that it is vategorical data. I again chose a bar graph as I felt it was the best at depicting the aggrgated counts of the various counties. I did not implement a colormap as, like before, I found the standard colors to be sufficient for the purposes of a bar graph.</p>
+
+<h2 id="search-the-data--methods">Search The Data &amp; Methods</h2>
+
+<!-- these are written in a combo of html and liquid -->
+
+<div class="left">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/building_inventory.csv">
+  The Data
+</a>
+</div>
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb">
+  The Analysis
+</a>
+</div>
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>A. P. Corgi</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:username@domain.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/shashank737"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.youtube.com/your_channel_name"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#ff0000'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-youtube fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
