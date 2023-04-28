@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Greenhouse gasses over the years (IS 445 Final Project)">
+  <meta property="og:description" content="We analyze the emissions of greenhouse gasses over the years up to 2012 to see how our emmissions are trending. We investigate what are indicators of a high ...">
+  <meta property="og:image" content="assets/pngs/final project viz.png">
+
+  <title>Greenhouse gasses over the years (IS 445 Final Project)</title>
+  <meta name="description" content="We analyze the emissions of greenhouse gasses over the years up to 2012 to see how our emmissions are trending. We investigate what are indicators of a high ...">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Shashank Kambhatla</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="greenhouse-gasses-over-the-years-is-445-final-project">Greenhouse gasses over the years (IS 445 Final Project)</h1>
+<h2 id="by-shashank-kambhatla">By Shashank Kambhatla</h2>
+
+<p>Over the years, greenhouse gas emissions have become increasingly problematic. Gasses like CO2, CH4, and N20 are greenhouse gasses (1) and are often emmiteed by power, industry, and transporttion sectors. These gasses are big contributors towards global climate change, and as such, their emmissions should be monitored closely.</p>
+
+<p>This article aims to visualize the trends in greenhouse gas emissions over the years up until 2012. We will be using a dataset from the Emissions Database for Global Atmospheric Research (EDGAR) (3, 6), which includes data on emissions for the three gasses for a variety of countires. Data for the years 1970-2012 is present. We will be visualizing trends in emissions over this time period, as well as focussing on our latest data, from 2012, and visualizing what may contribute towards a country being a “high emmisions” country.</p>
+
+<h1 id="investigating-greenhouse-gas-emissions">Investigating greenhouse gas emissions</h1>
+<p>Click on dropdown to select a country
+Zoom in and zoom out to see more detail</p>
+
+<vegachart schema-url="/assets/json/mychart10.json" style="width: 100%"></vegachart>
+
+<p>CO2, NH4, and N20 are some of the largest contributors to phenomenon like climate change. The best way to see whether emissions have increased over the years is to simply plot a line graph like above. We have visualized the emissions of the three gasses over the years for all countries in the dataset. This paints a picture of the trends in each countries emissions. In general we can see that emisisons have drastically gone up over the past few years, particularly that of CO2. However, we can also see some flatter lines around the year 2012, which suggests countries are becoming more aware of the issues posed by these greenhouse gas emissions, and are taking steps to combat them.</p>
+
+<h1 id="which-sectors-emit-the-most-greenhouse-gasses">Which sectors emit the most greenhouse gasses</h1>
+<p>Click on dropdown to select a country
+Zoom in and zoom out to see more detail</p>
+
+<vegachart schema-url="/assets/json/mychart11.json" style="width: 100%"></vegachart>
+
+<p>Just fuguring out who emited how much does not tell us the whole story. It is important for countries to know which sectors of their industries produce the most greenhosue gasses so that they can react with appropriate measures. Our dataset has a convenient set of columns that tells us the emissions from various sectors. This is a graph of overall greenhouse gas emissions per sector over the years. We can see that the contribution of different sectors towards emissions is highly dependant on the country. We can see that in general power emissions seem to be a predominant factor in contributing towards emissions. Furthermore, we do see declining emissions from some sectors in some countries, particularly in the transport sector.</p>
+
+<h1 id="what-about-country-size">What about country size?</h1>
+<p>Hover over a point to see which country it is
+Zoom in and zoom out to see more detail</p>
+
+<vegachart schema-url="/assets/json/mychart12.json" style="width: 100%"></vegachart>
+
+<p>Not all countries are the same size. This can be in terms of population, area or various other metrics. The size of a country can heavily dictate the ammount of greenhouse gasses emited. It follows that in general a small county will not emit nearly as much as a large one. We have located a dataset by the United Nations (5) that maintains population details on various countries. We are going to use this in conjunction with our emissions dataset to investigate how much population plays a role in determining emissions. We have focused on the year 2012, as this is the latest year of which the emissions dataset includes data. We have also focused on CO2 emissions, as this was seen to be one of the predonminant gasses emitted. We have used a scatter plot to represent various countries. This also allows us to identify which countries have disproportionately high or low emissions for their population.</p>
+
+<h1 id="how-big-is-an-economy">How big is an economy?</h1>
+
+<p>Hover over a point to see which country it is
+Zoom in and zoom out to see more detail</p>
+
+<vegachart schema-url="/assets/json/mychart13.json" style="width: 100%"></vegachart>
+
+<p>Another metric that can be used to identify “high emission” countries is GDP. GDP stands for Gross Domestic Product and consits of the values of various goods and services made in a given country. It is often used as a measure of the size of a country’s economy, which indicates how active their industry is (2). As we have seen. General industry is a large contributor of emissions, so this can be a good metric of how more active economies may emit more greenhouse gasses. We found a dataset by the World Bank (4) that maintains GDP measures for various countries. We will use this to compare GDP data against CO2 emissions. As before, we have focused on the year 2012 and consturcted a scatterplot of country’s GDP against their CO2 emissions.. We can also identify disproportionately high or low emissions for a given GDP range.</p>
+
+<p>Thank you for reading my article. I hope this article was informative, and instructive in showcasing some of the trends in greenhouse gas emissions. Please scroll down to see my references, my data sources, and a link to the Python notebook I used to contruct the visualizations seen here.</p>
+
+<h1 id="references">References</h1>
+
+<ul>
+  <li>(1) Environmental Protection Agency. (n.d.). Overview of Greenhouse Gasses. EPA. Retrieved April 13, 2023, from https://www.epa.gov/ghgemissions/overview-greenhouse-gases</li>
+  <li>(2) Beginners:GDP - what is gross domestic product (GDP)? Beginners:GDP - What is gross domestic product (GDP)? - Statistics Explained. (n.d.). Retrieved April 28, 2023, from https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Beginners%3AGDP_-<em>What_is_gross_domestic_product</em>%28GDP%29%3F</li>
+</ul>
+
+<h1 id="data-sources">Data Sources</h1>
+
+<ul>
+  <li>(3) Janssens-Maenhout, G., Crippa, M., Guizzardi, D., Muntean, M., &amp; Schaaf, E. (2014, September 26). Emissions database for Global Atmospheric Research, version V4.2 FT2012 (time-series). Joint Research Centre Data Catalogue - Emissions Database for Global Atmospheric Research… - European Commission. Retrieved April 28, 2023, from https://data.jrc.ec.europa.eu/dataset/jrc-edgar-jrc-edgar_v4-2_ft2010_timeseries</li>
+  <li>(4) GDP (current US$). World Bank Open Data. (n.d.). Retrieved April 28, 2023, from https://data.worldbank.org/indicator/NY.GDP.MKTP.CD</li>
+  <li>(5) United Nations. (2022). World population prospects - population division. United Nations. Retrieved April 28, 2023, from https://population.un.org/wpp/Download/Standard/CSV/</li>
+  <li>(6) Emissions CSV file. CORGIS Datasets Project. (n.d.). Retrieved April 28, 2023, from https://think.cs.vt.edu/corgis/csv/emissions/</li>
+</ul>
+
+<h1 id="code-sources">Code Sources</h1>
+
+<ul>
+  <li>https://uiuc-ischool-dataviz.github.io/is445_oauoag_spring2023/nbv.html?notebook_name=%2Fis445_oauoag_spring2023%2Fweek12%2FinClass_week12.ipynb</li>
+  <li>https://uiuc-ischool-dataviz.github.io/is445_oauoag_spring2023/nbv.html?notebook_name=%2Fis445_oauoag_spring2023%2Fweek14%2FinClass_week14.ipynb</li>
+  <li>https://vega.github.io/vega-lite/docs/bind.html</li>
+  <li>https://vega.github.io/vega-lite-v3/docs/filter.html</li>
+  <li>https://vega.github.io/vega-lite-v4/docs/init.html</li>
+  <li>https://starboard.gg/nb/nFpfz3I</li>
+</ul>
+
+<h2 id="search-the-data--methods">Search The Data &amp; Methods</h2>
+
+<!-- these are written in a combo of html and liquid -->
+
+<div class="right">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/Shashank737/Shashank737.github.io/blob/main/python_notebooks/kambhatla-shashank-assignment10.ipynb">
+  The Analysis
+</a>
+</div>
+
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>A. P. Corgi</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:username@domain.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/shashank737"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/your_username"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.youtube.com/your_channel_name"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#ff0000'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-youtube fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+
+<!-- Custom page specific js files -->
+  
+    <script src='/assets/js/vega.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-lite.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/vega-embed.min.js' type="text/javascript"></script>
+  
+    <script src='/assets/js/justcharts.js' type="text/javascript"></script>
+  
+
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
