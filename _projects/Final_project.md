@@ -80,6 +80,7 @@ Thank you for reading my article. I hope this article was informative, and instr
 - https://vega.github.io/vega-lite-v3/docs/filter.html
 - https://vega.github.io/vega-lite-v4/docs/init.html
 - https://starboard.gg/nb/nFpfz3I
+- https://altair-viz.github.io/user_guide/generated/channels/altair.Tooltip.html
 
 ## Search The Data & Methods
 
