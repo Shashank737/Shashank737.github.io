@@ -62,25 +62,25 @@ Thank you for reading my article. I hope this article was informative, and instr
 
 # References
 
-- (1) Environmental Protection Agency. (n.d.). Overview of Greenhouse Gasses. EPA. Retrieved April 13, 2023, from https://www.epa.gov/ghgemissions/overview-greenhouse-gases
-- (2) Beginners:GDP - what is gross domestic product (GDP)? Beginners:GDP - What is gross domestic product (GDP)? - Statistics Explained. (n.d.). Retrieved April 28, 2023, from https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Beginners%3AGDP_-_What_is_gross_domestic_product_%28GDP%29%3F 
+- (1) Environmental Protection Agency. (n.d.). Overview of Greenhouse Gasses. EPA. Retrieved April 13, 2023, from <https://www.epa.gov/ghgemissions/overview-greenhouse-gases>
+- (2) Beginners:GDP - what is gross domestic product (GDP)? Beginners:GDP - What is gross domestic product (GDP)? - Statistics Explained. (n.d.). Retrieved April 28, 2023, from <https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Beginners%3AGDP_-_What_is_gross_domestic_product_%28GDP%29%3F> 
 
 # Data Sources
 
-- (3) Janssens-Maenhout, G., Crippa, M., Guizzardi, D., Muntean, M., &amp; Schaaf, E. (2014, September 26). Emissions database for Global Atmospheric Research, version V4.2 FT2012 (time-series). Joint Research Centre Data Catalogue - Emissions Database for Global Atmospheric Research... - European Commission. Retrieved April 28, 2023, from https://data.jrc.ec.europa.eu/dataset/jrc-edgar-jrc-edgar_v4-2_ft2010_timeseries 
-- (4) GDP (current US$). World Bank Open Data. (n.d.). Retrieved April 28, 2023, from https://data.worldbank.org/indicator/NY.GDP.MKTP.CD 
-- (5) United Nations. (2022). World population prospects - population division. United Nations. Retrieved April 28, 2023, from https://population.un.org/wpp/Download/Standard/CSV/ 
-- (6) Emissions CSV file. CORGIS Datasets Project. (n.d.). Retrieved April 28, 2023, from https://think.cs.vt.edu/corgis/csv/emissions/ 
+- (3) Janssens-Maenhout, G., Crippa, M., Guizzardi, D., Muntean, M., &amp; Schaaf, E. (2014, September 26). Emissions database for Global Atmospheric Research, version V4.2 FT2012 (time-series). Joint Research Centre Data Catalogue - Emissions Database for Global Atmospheric Research... - European Commission. Retrieved April 28, 2023, from <https://data.jrc.ec.europa.eu/dataset/jrc-edgar-jrc-edgar_v4-2_ft2010_timeseries> 
+- (4) GDP (current US$). World Bank Open Data. (n.d.). Retrieved April 28, 2023, from <https://data.worldbank.org/indicator/NY.GDP.MKTP.CD> 
+- (5) United Nations. (2022). World population prospects - population division. United Nations. Retrieved April 28, 2023, from <https://population.un.org/wpp/Download/Standard/CSV/> 
+- (6) Emissions CSV file. CORGIS Datasets Project. (n.d.). Retrieved April 28, 2023, from <https://think.cs.vt.edu/corgis/csv/emissions/> 
 
 # Code Sources
 
-- https://uiuc-ischool-dataviz.github.io/is445_oauoag_spring2023/nbv.html?notebook_name=%2Fis445_oauoag_spring2023%2Fweek12%2FinClass_week12.ipynb
-- https://uiuc-ischool-dataviz.github.io/is445_oauoag_spring2023/nbv.html?notebook_name=%2Fis445_oauoag_spring2023%2Fweek14%2FinClass_week14.ipynb
-- https://vega.github.io/vega-lite/docs/bind.html
-- https://vega.github.io/vega-lite-v3/docs/filter.html
-- https://vega.github.io/vega-lite-v4/docs/init.html
-- https://starboard.gg/nb/nFpfz3I
-- https://altair-viz.github.io/user_guide/generated/channels/altair.Tooltip.html
+- (1) <https://uiuc-ischool-dataviz.github.io/is445_oauoag_spring2023/nbv.html?notebook_name=%2Fis445_oauoag_spring2023%2Fweek12%2FinClass_week12.ipynb>
+- (2) <https://uiuc-ischool-dataviz.github.io/is445_oauoag_spring2023/nbv.html?notebook_name=%2Fis445_oauoag_spring2023%2Fweek14%2FinClass_week14.ipynb>
+- (3) <https://vega.github.io/vega-lite/docs/bind.html>
+- (4) <https://vega.github.io/vega-lite-v3/docs/filter.html>
+- (5) <https://vega.github.io/vega-lite-v4/docs/init.html>
+- (6) <https://starboard.gg/nb/nFpfz3I>
+- (7) <https://altair-viz.github.io/user_guide/generated/channels/altair.Tooltip.html>
 
 ## Search The Data & Methods
 
