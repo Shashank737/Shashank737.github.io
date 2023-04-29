@@ -22,30 +22,40 @@ Click on dropdown to select a country
 
 Zoom in and zoom out to see more detail
 
+(Visualization of base data made by me)
+
 <vegachart schema-url="{{ site.baseurl }}/assets/json/mychart10.json" style="width: 100%"></vegachart>
 
 
-CO2, NH4, and N20 are some of the largest contributors to phenomenon like climate change. The best way to see whether emissions have increased over the years is to simply plot a line graph like above. We have visualized the emissions of the three gasses over the years for all countries in the dataset. This paints a picture of the trends in each countries emissions. In general we can see that emisisons have drastically gone up over the past few years, particularly that of CO2. However, we can also see some flatter lines around the year 2012, which suggests countries are becoming more aware of the issues posed by these greenhouse gas emissions, and are taking steps to combat them.
+CO2, NH4, and N20 are some of the largest contributors to phenomenon like climate change. The best way to see whether emissions have increased over the years is to simply plot a line graph like above. We have visualized the emissions of the three gasses over the years for all countries in the dataset. This paints a picture of the trends in each countries emissions. The x axis represents the years, and the y axis represents the emissions of various gasses. Each gas is represented by a different line. In general we can see that emisisons have drastically gone up over the past few years, particularly that of CO2. However, we can also see some flatter lines around the year 2012, which suggests countries are becoming more aware of the issues posed by these greenhouse gas emissions, and are taking steps to combat them.
 
 # Which sectors emit the most greenhouse gasses
 Click on dropdown to select a country
 
 Zoom in and zoom out to see more detail
 
+(Visualization of base data made by me)
+
 <vegachart schema-url="{{ site.baseurl }}/assets/json/mychart11.json" style="width: 100%"></vegachart>
 
 
-Just fuguring out who emited how much does not tell us the whole story. It is important for countries to know which sectors of their industries produce the most greenhosue gasses so that they can react with appropriate measures. Our dataset has a convenient set of columns that tells us the emissions from various sectors. This is a graph of overall greenhouse gas emissions per sector over the years. We can see that the contribution of different sectors towards emissions is highly dependant on the country. We can see that in general power emissions seem to be a predominant factor in contributing towards emissions. Furthermore, we do see declining emissions from some sectors in some countries, particularly in the transport sector. 
+Just fuguring out who emited how much does not tell us the whole story. It is important for countries to know which sectors of their industries produce the most greenhosue gasses so that they can react with appropriate measures. Our dataset has a convenient set of columns that tells us the emissions from various sectors. This is a graph of overall greenhouse gas emissions per sector over the years. The lines represent different sectors of emissions. The x axis is the years, and the y axis is overall greenhouse gas emissions. We can see that the contribution of different sectors towards emissions is highly dependant on the country. We can see that in general power emissions seem to be a predominant factor in contributing towards emissions. Furthermore, we do see declining emissions from some sectors in some countries, particularly in the transport sector. 
 
 # What about country size?
 Hover over a point to see which country it is
 
 Zoom in and zoom out to see more detail
 
+(Contextual visualization made by me)
+
 <vegachart schema-url="{{ site.baseurl }}/assets/json/mychart12.json" style="width: 100%"></vegachart>
 
+(Contextual visualization made by me)
 
-Not all countries are the same size. This can be in terms of population, area or various other metrics. The size of a country can heavily dictate the ammount of greenhouse gasses emited. It follows that in general a small county will not emit nearly as much as a large one. We have located a dataset by the United Nations (5) that maintains population details on various countries. We are going to use this in conjunction with our emissions dataset to investigate how much population plays a role in determining emissions. We have focused on the year 2012, as this is the latest year of which the emissions dataset includes data. We have also focused on CO2 emissions, as this was seen to be one of the predonminant gasses emitted. We have used a scatter plot to represent various countries. This also allows us to identify which countries have disproportionately high or low emissions for their population.
+<vegachart schema-url="{{ site.baseurl }}/assets/json/mychart14.json" style="width: 100%"></vegachart>
+
+
+Not all countries are the same size. This can be in terms of population, area or various other metrics. The size of a country can heavily dictate the ammount of greenhouse gasses emited. It follows that in general a small county will not emit nearly as much as a large one. We have located a dataset by the United Nations (5) that maintains population details on various countries. This includes both the population density and the total population. We are going to use this in conjunction with our emissions dataset to investigate how much population and population density plays a role in determining emissions. We have focused on the year 2012, as this is the latest year of which the emissions dataset includes data. We have also focused on CO2 emissions, as this was seen to be one of the predonminant gasses emitted. We have used a scatter plot to represent various countries. In both cases, the x axis is the CO2 emissions, and the y axis is population, and population density respectively. This also allows us to identify which countries have disproportionately high or low emissions for their population or density.
 
 # How big is an economy?
 
@@ -53,12 +63,16 @@ Hover over a point to see which country it is
 
 Zoom in and zoom out to see more detail
 
+(Contextual vizualization made by me)
+
 <vegachart schema-url="{{ site.baseurl }}/assets/json/mychart13.json" style="width: 100%"></vegachart>
 
 
-Another metric that can be used to identify "high emission" countries is GDP. GDP stands for Gross Domestic Product and consits of the values of various goods and services made in a given country. It is often used as a measure of the size of a country's economy, which indicates how active their industry is (2). As we have seen. General industry is a large contributor of emissions, so this can be a good metric of how more active economies may emit more greenhouse gasses. We found a dataset by the World Bank (4) that maintains GDP measures for various countries. We will use this to compare GDP data against CO2 emissions. As before, we have focused on the year 2012 and consturcted a scatterplot of country's GDP against their CO2 emissions.. We can also identify disproportionately high or low emissions for a given GDP range.
+Another metric that can be used to identify "high emission" countries is GDP. GDP stands for Gross Domestic Product and consits of the values of various goods and services made in a given country. It is often used as a measure of the size of a country's economy, which indicates how active their industry is (2). As we have seen. General industry is a large contributor of emissions, so this can be a good metric of how more active economies may emit more greenhouse gasses. We found a dataset by the World Bank (4) that maintains GDP measures for various countries. We will use this to compare GDP data against CO2 emissions. As before, CO2 emissions forms the x axis, and the y axis is GDP. As before, we have focused on the year 2012 and consturcted a scatterplot of country's GDP against their CO2 emissions.. We can also identify disproportionately high or low emissions for a given GDP range.
 
 Thank you for reading my article. I hope this article was informative, and instructive in showcasing some of the trends in greenhouse gas emissions. Please scroll down to see my references, my data sources, and a link to the Python notebook I used to contruct the visualizations seen here.
+
+Note: The first two visualizations are from the "base" dataset. The third, fourth and fifth visualizations are a combination of the "base" dataset and two contextual datasets. All four visualization were constructed by me in the linked python notebook.
 
 # References
 
@@ -81,6 +95,9 @@ Thank you for reading my article. I hope this article was informative, and instr
 - (5) <https://vega.github.io/vega-lite-v4/docs/init.html>
 - (6) <https://starboard.gg/nb/nFpfz3I>
 - (7) <https://altair-viz.github.io/user_guide/generated/channels/altair.Tooltip.html>
+- (8) <https://altair-viz.github.io/user_guide/configuration.html>
+- (9) <https://altair-viz.github.io/gallery/multiple_interactions.html>
+- (10) <https://altair-viz.github.io/user_guide/transform/filter.html>
 
 ## Search The Data & Methods
 
