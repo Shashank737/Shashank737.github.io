@@ -98,6 +98,7 @@ Note: The first two visualizations are from the "base" dataset. The third, fourt
 - (8) <https://altair-viz.github.io/user_guide/configuration.html>
 - (9) <https://altair-viz.github.io/gallery/multiple_interactions.html>
 - (10) <https://altair-viz.github.io/user_guide/transform/filter.html>
+- (11) <https://github.com/altair-viz/altair/issues/1820>
 
 ## Search The Data & Methods
 
